@@ -1,0 +1,28 @@
+.slick-dots li.slick-active button:before {
+    opacity: .75 !important;
+    color: white !important;
+}
+
+.slick-dots li button:before {
+    color: white !important;
+}
+
+
+
+.movie-item {
+    width: 198px;
+    height: 240px;
+}
+
+.box {
+    width: 200px;
+}
+
+@media only screen and (max-width:1023px) {
+    .movie-item {
+        width: 138px;
+        height: 180px;
+    }
+
+   
+}
