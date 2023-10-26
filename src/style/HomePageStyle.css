@@ -9,20 +9,166 @@
 
 
 
+.movie-item-slide {
+    width: 260px;
+    height: 270px;
+}
+
 .movie-item {
-    width: 198px;
-    height: 240px;
+    width: 183px;
+    height: 235px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .box {
     width: 200px;
 }
 
+.pd-text {
+    padding-bottom: 20px;
+    color: #c58465;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.wrap-title {
+    width: 80%;
+}
+
+.item-movie-title {
+    background-color: '#282828';
+    width: 183px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.title-item {
+    background-color: #181818;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    border-radius: 0px 0px 10px 10px;
+    padding-left: 5px;
+}
+
+.title-footer {
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+.wrap-itemmovie {
+    display: none;
+}
+
+
+
+/* Movie */
+
+.wrap-main-movie {
+    background-color: #222222;
+    width: 70%;
+    padding: 20px;
+}
+
+.wrap-information-movie {
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+.w-img-movie {
+    width: 50%;
+}
+
+.button-play {
+    background-color: #d9534f;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+}
+
+.image-movie {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.information-movie {
+    width: 45%;
+}
+
+.icon-mxh {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.icon-mxh svg {
+    width: 35px;
+    height: 35px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.input-movie {
+    color: black;
+    border: 1px solid #000;
+    width: 100%;
+    margin-left: 8px;
+    padding-left: 4px;
+}
+
+.input-movie:focus {
+
+    outline: none;
+}
+
 @media only screen and (max-width:1023px) {
-    .movie-item {
+    .movie-item-slide {
         width: 138px;
         height: 180px;
     }
 
-   
+    .wrap-tasbar {
+        display: none;
+    }
+
+    .wrap-title {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 10px;
+
+    }
+
+    .pd-text {
+        padding-bottom: 10px;
+    }
+
+    .wrap-main-movie {
+        width: 100%;
+    }
+
+    .information-movie {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .text-slide {
+        font-size: 12px;
+    }
+
+    .wrap-itemmovie {
+        width: 139px;
+    }
+
+    .wrap-information-movie {
+        display: block;
+    }
+
+    .w-img-movie {
+        width: 100%;
+    }
 }

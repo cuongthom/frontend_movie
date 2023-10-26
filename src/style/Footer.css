@@ -1,0 +1,28 @@
+.wrap-title-footer {
+    display: flex;
+    padding-top: 128px;
+    padding-bottom: 32px;
+
+}
+
+.logo-title {
+    width: 40%;
+}
+
+.title-footer {
+    width: 60%;
+}
+
+@media only screen and (max-width:1023px) {
+    .wrap-title-footer {
+        display: block;
+    }
+
+    .logo-title {
+        width: 100%;
+    }
+
+    .title-footer {
+        width: 100%;
+    }
+}

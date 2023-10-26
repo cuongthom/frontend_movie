@@ -50,6 +50,22 @@
     background-color: black;
 }
 
+.pd-wrap-slide {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.ant-select-selection {
+    background-color: green;
+}
+
+.input-search:focus {
+    outline: none;
+}
+
+
+
+
 @media only screen and (max-width:1030px) {
     .d-none {
         display: none;
@@ -65,9 +81,12 @@
         padding-top: 5px;
         padding-bottom: 5px;
     }
-    .pd-slide {
+
+    .pd-wrap-slide {
         padding: 40px;
     }
 }
 
 @media only screen and (min-width:1172px) {}
+
+@media only screen and (max-width:576px) {}

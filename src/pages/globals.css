@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;600&family=Merriweather:wght@300&family=Mukta:wght@500&family=Roboto+Mono&family=Roboto:wght@700&display=swap');
 
 * {
     margin: 0;
@@ -10,37 +10,160 @@
     font-family: 'Inconsolata', monospace;
     font-family: 'Merriweather', serif;
     font-family: 'Mukta', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Mono', monospace;
-
+    color: white;
 }
 
-.body {
+body {
     margin: 0;
+
 }
 
-.grid-slide {
+body {
+    background-color: black;
+    width: 100%;
+}
+
+.grid-container {
     width: 1050px;
     max-width: 100%;
     margin: 0 auto;
-}
-
-main {
-    background-color: black;
-    width: 100%;
 }
 
 .bg-black {
     background-color: black;
 }
 
-@media only screen and (max-width:1023px) {
-
-
-  
+.color-movie {
+    color: #c58461;
+    font-weight: 800;
 }
 
-@media only screen and (min-width:1023px) {
+hr {
+    color: gray;
+    background: gray;
+    border: 1;
+    height: 1px;
+}
+
+.dropdow-text {
+    display: flex;
+}
+
+.video-container {
+    position: relative;
+    margin: 0 auto;
+}
+
+.video {
+    width: 100%;
+    height: auto;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0px;
+    height: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    cursor: pointer;
+}
+
+.play-button::before {
+    content: "\25B6";
+    font-size: 80px;
+    color: white;
+}
+
+.style-color-common {
+    color: #c7845d;
+}
+
+.font-gray {
+    color: #a1a1aa;
+}
+
+
+
+:where(.css-dev-only-do-not-override-amq5gd).ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    display: none;
+}
+
+:where(.css-dev-only-do-not-override-amq5gd).ant-pagination .ant-pagination-options {
+    display: none;
+}
+
+:where(.css-dev-only-do-not-override-amq5gd).ant-pagination {
+    text-align: center;
+}
+
+:where(.css-dev-only-do-not-override-amq5gd).ant-pagination .ant-pagination-item a {
+    color: white;
+    background-color: #414144;
+    width: 50px;
+    border-radius: 5px;
+}
+
+:where(.css-dev-only-do-not-override-amq5gd).ant-pagination .ant-pagination-item a:hover {
+    color: white;
+    background-color: #959292;
+
+}
+
+:where(.css-dev-only-do-not-override-amq5gd).ant-pagination .ant-pagination-item-active {
+    background-color: black;
+    border-color: black;
+    height: 32px;
+}
+
+:where(.css-dev-only-do-not-override-amq5gd).ant-pagination .ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-ellipsis,
+:where(.css-dev-only-do-not-override-amq5gd).ant-pagination .ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-ellipsis {
+    color: white;
+}
+
+:where(.css-dev-only-do-not-override-amq5gd).ant-pagination .ant-pagination-item-active:hover {
+    border-color: black;
+    color: white;
+    background-color: black;
+}
+
+/* dropdown header hover */
+:where(.css-dev-only-do-not-override-amq5gd).ant-dropdown .ant-dropdown-menu,
+:where(.css-dev-only-do-not-override-amq5gd).ant-dropdown-menu-submenu .ant-dropdown-menu {
+    background-color: #2d2d2d;
+    margin-top: 15px;
+    border-radius: none;
+}
+
+@media only screen and (min-width:1031px) {
     .icon-menu-none {
         display: none;
     }
+}
+
+@media only screen and (max-width:448px) {
+    :where(.css-dev-only-do-not-override-amq5gd).ant-pagination .ant-pagination-item a {
+
+        width: 30px;
+    }
+
+    .dropdow-text div p {
+        font-size: 10px;
+
+    }
+
+    .dropdow-text div {
+        padding-right: 20px;
+    }
+}
+
+.color-black {
+    color: black;
 }

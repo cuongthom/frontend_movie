@@ -1,0 +1,27 @@
+.wrap-dropdown {
+    background-color: #3f3f46;
+    padding: 10px;
+    border-radius: 10px;
+    width: 180px;
+
+}
+
+.flexstyle {
+    flex: 1;
+    flex-direction: 'row';
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container-dropdow {
+    /* width: 100%; */
+}
+
+@media only screen and (max-width:940px) {
+    .wrap-dropdown {
+        margin-bottom: 5px;
+
+    }
+}

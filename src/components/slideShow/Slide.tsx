@@ -4,120 +4,59 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Movie from '../../../public/image/Toiackinhhoang.png'
 import Image from "next/image";
-export default class Responsive extends Component {
-  render() {
-    var settings = {
+import ItemMovie from "../itemMovie/ItemMovie";
+export default function Responsive({ image, title, styleImage, styleTitle, style }: any) {
 
-      infinite: true,
-      speed: 500,
-      slidesToShow: 4,
-      slidesToScroll: 4,
-      initialSlide: 0,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            infinite: true,
+  var settings = {
 
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          infinite: true,
+
         }
-      ]
-    };
-    return (
-      <div className="pd-slide">
-        <h2 style={{ color: 'white' }}> Phim Hot </h2>
-        <Slider {...settings} >
-          <div>
-            <Image
-              src={Movie}
-              className='movie-item'
-              alt="logo"
-              priority={false || true}
-            />
-            <h3>Tội ác kinh hoàng</h3>
-          </div>
-          <div>
-            <Image
-              src={Movie}
-              className='movie-item'
-              alt="logo"
-              priority={false || true}
-            />
-            <h3>Tội ác kinh hoàng</h3>
-          </div>
-          <div>
-            <Image
-              src={Movie}
-              className='movie-item'
-              alt="logo"
-              priority={false || true}
-            />
-            <h3>Tội ác kinh hoàng</h3>
-          </div>
-          <div>
-            <Image
-              src={Movie}
-              className='movie-item'
-              alt="logo"
-              priority={false || true}
-            />
-            <h3>Tội ác kinh hoàng</h3>
-          </div>
-          <div>
-            <Image
-              src={Movie}
-              className='movie-item'
-              alt="logo"
-              priority={false || true}
-            />
-            <h3>Tội ác kinh hoàng</h3>
-          </div>
-          <div>
-            <Image
-              src={Movie}
-              className='movie-item'
-              alt="logo"
-              priority={false || true}
-            />
-            <h3>Tội ác kinh hoàng</h3>
-          </div>
-          <div>
-            <Image
-              src={Movie}
-              className='movie-item'
-              alt="logo"
-              priority={false || true}
-            />
-            <h3>Tội ác kinh hoàng</h3>
-          </div>
-          <div>
-            <Image
-              src={Movie}
-              className='movie-item'
-              alt="logo"
-              priority={false || true}
-            />
-            <h3>Tội ác kinh hoàng</h3>
-          </div>
-        </Slider>
-      </div>
-    );
-  }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
+    ]
+  };
+
+
+
+
+  return (
+    <div className="pd-wrap-slide">
+      <h2 className="pd-text"> PHIM HOT </h2>
+      <Slider {...settings} className="pd-slide">
+        <ItemMovie image={image} title={title} styleImage={styleImage} styleTitle={styleTitle} style={style} />
+        <ItemMovie image={image} title={title} styleImage={styleImage} styleTitle={styleTitle} style={style} />
+        <ItemMovie image={image} title={title} styleImage={styleImage} styleTitle={styleTitle} style={style} />
+        <ItemMovie image={image} title={title} styleImage={styleImage} styleTitle={styleTitle} style={style} />
+        <ItemMovie image={image} title={title} styleImage={styleImage} styleTitle={styleTitle} style={style} />
+        <ItemMovie image={image} title={title} styleImage={styleImage} styleTitle={styleTitle} style={style} />
+
+      </Slider>
+    </div>
+  );
 }

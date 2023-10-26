@@ -1,0 +1,14 @@
+.play-list-style {
+    display: flex;
+    flex-wrap: wrap;
+}
+.play-list-style p {
+    background-color: red;
+    width: 65px;
+    padding: 8px;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
